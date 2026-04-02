@@ -53,14 +53,32 @@ const HeroSection = () => {
         <div className="flex flex-col lg:flex-row items-center justify-center gap-12 lg:gap-24">
           {/* Avatar - Static Presentation */}
           <motion.div
-            initial={{ opacity: 0, scale: 0.95 }}
-            animate={{ opacity: 1, scale: 1 }}
-            transition={{ duration: 0.8, delay: 0.1, ease: [0.16, 1, 0.3, 1] }}
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            transition={{ duration: 0.8, delay: 0.2 }}
             className="flex-shrink-0 order-1 lg:order-1"
           >
-            <div className="relative w-64 h-64 lg:w-80 lg:h-80 group">
+            <motion.div
+              animate={{ 
+                y: [0, -20, 0],
+                rotate: [0, 2, 0, -2, 0] 
+              }}
+              transition={{ 
+                duration: 6, 
+                repeat: Infinity, 
+                ease: "easeInOut" 
+              }}
+              className="relative w-64 h-64 lg:w-80 lg:h-80 group"
+            >
               {/* Subtle glow background */}
-              <div className="absolute inset-0 rounded-full bg-primary/10 blur-3xl" />
+              <motion.div 
+                animate={{
+                   scale: [1, 1.2, 1],
+                   opacity: [0.1, 0.2, 0.1]
+                }}
+                transition={{ duration: 4, repeat: Infinity }}
+                className="absolute inset-0 rounded-full bg-primary/10 blur-3xl" 
+              />
               
               <div className="relative w-full h-full">
                 <img
@@ -71,7 +89,7 @@ const HeroSection = () => {
                   className="w-full h-full object-cover rounded-full border-2 border-primary/20 shadow-[0_20px_50px_rgba(59,130,246,0.1)] transition-all duration-500 group-hover:scale-105"
                 />
               </div>
-            </div>
+            </motion.div>
           </motion.div>
 
           {/* Text Content */}
