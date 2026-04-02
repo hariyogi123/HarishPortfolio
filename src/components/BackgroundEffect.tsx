@@ -5,19 +5,19 @@ const BackgroundEffect = () => {
   const [particles, setParticles] = useState<Array<{ id: number; x: number; y: number; size: number; delay: number; duration: number }>>([]);
 
   useEffect(() => {
-    const newParticles = Array.from({ length: 80 }).map((_, i) => ({
+    const newParticles = Array.from({ length: 40 }).map((_, i) => ({
       id: i,
       x: Math.random() * 100,
       y: Math.random() * 100,
       size: Math.random() * 3 + 1,
       delay: Math.random() * 3,
-      duration: 3, // SET TO EXACTLY 3 SECONDS
+      duration: 3, 
     }));
     setParticles(newParticles);
   }, []);
 
   return (
-    <div className="fixed inset-0 z-0 pointer-events-none overflow-hidden">
+    <div className="fixed inset-0 z-[-20] pointer-events-none overflow-hidden select-none translate-z-0">
       {/* Animated Glowing Orbs (Extra visual depth) */}
       <motion.div 
         animate={{
