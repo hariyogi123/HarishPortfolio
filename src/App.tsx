@@ -63,7 +63,7 @@ const App = () => {
                 </motion.div>
               )}
             </AnimatePresence>
-            <BrowserRouter>
+            <BrowserRouter basename="/HarishPortfolio">
               <Routes>
                 <Route path="/" element={<Index />} />
                 <Route path="*" element={<NotFound />} />
