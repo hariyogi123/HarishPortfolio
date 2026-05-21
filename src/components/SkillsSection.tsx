@@ -13,14 +13,20 @@ import { Wand2, Brain, Sparkles, Layers } from "lucide-react";
 
 // OLD CONTENT RESTORED
 const data = [
-  { name: 'Python', level: 85 },
-  { name: 'HTML', level: 95 },
-  { name: 'CSS', level: 90 },
-  { name: 'JavaScript', level: 85 },
+  { name: "Python", level: 70 },
+  { name: "HTML/CSS/JS", level: 65 },
+  { name: "SQL", level: 65 },
 ];
 
-const tools = ["GitHub", "VS Code", "Figma", "Flutter Flow", "AI Tools", "Power BI"];
-const softSkills = ["Communication", "Problem Solving", "Fast Learner", "Teamwork"];
+const tools = ["Git / GitHub", "Visual Studio Code", "Flutter Flow", "Power BI"];
+const softSkills = [
+  "Communication",
+  "Problem Solving",
+  "Design Thinkers",
+  "Fast Learner",
+  "Teamwork",
+  "Organizer",
+];
 
 const SkillsSection = () => (
   <SectionWrapper id="skills" title="">

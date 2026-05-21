@@ -1,19 +1,14 @@
 import { useEffect, useState } from "react";
 import { motion } from "framer-motion";
-import { Phone, Mail, Linkedin, Download, Sparkles, ExternalLink, Share2, ChevronDown } from "lucide-react";
+import { Phone, Mail, Linkedin, Download, Sparkles, ExternalLink } from "lucide-react";
 import avatarImg from "@/assets/avatar.png";
 
-const roles = [
-  "Innovative Data Analyst",
-  "Data Scientist",
-  "AI Developer",
-  "ML Enthusiast",
-];
+const roles = ["Innovative Data Analyst", "Data Scientist"];
 
 const stats = [
-  { value: "8.8", label: "CGPA" },
-  { value: "4th", label: "Year Student" },
-  { value: "100%", label: "Focus" },
+  { value: "5+", label: "Internships" },
+  { value: "3", label: "Projects" },
+  { value: "4", label: "Certifications" },
 ];
 
 const HeroSection = () => {
@@ -106,7 +101,7 @@ const HeroSection = () => {
               className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-white dark:bg-slate-900 border border-blue-50 dark:border-white/10 shadow-sm text-[#1F2937] dark:text-white text-[10px] font-bold mb-6 hover:border-primary/30 transition-colors"
             >
               <Sparkles size={12} className="text-primary" />
-              <span className="uppercase tracking-widest text-[#6B7280] dark:text-slate-400">Data-Driven Mindset</span>
+              <span className="uppercase tracking-widest text-[#6B7280] dark:text-slate-400">Innovative Data Analyst & Data Scientist</span>
             </motion.div>
             
             <h1 className="font-heading text-base sm:text-lg lg:text-lg font-bold mb-0.5 text-[#111827] dark:text-white leading-[1.2]">
@@ -124,8 +119,9 @@ const HeroSection = () => {
             </div>
             
             <p className="text-muted-foreground text-xs lg:text-sm max-w-lg mx-auto lg:mx-0 mb-8 leading-relaxed font-normal">
-              I'm an AI and Data Analyst passionate about uncovering hidden insights and building 
-              intelligent systems that solve complex real-world problems.
+              Pursuing a Bachelor of Engineering in Computer Science and Technology at SNS College of
+              Engineering. Passionate Python developer with a strong interest in leveraging AI tools,
+              committed to personal growth and innovative tech projects.
             </p>
 
             {/* Stats Section */}
@@ -139,23 +135,48 @@ const HeroSection = () => {
             </div>
 
             <div className="flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-4">
-              <button className="group relative bg-[#3B82F6] text-white px-7 py-3 rounded-full text-sm font-bold flex items-center gap-2.5 transition-all hover:translate-y-[-1px] hover:shadow-lg hover:shadow-blue-200 active:scale-95">
+              <a
+                href="#projects"
+                className="group relative bg-[#3B82F6] text-white px-7 py-3 rounded-full text-sm font-bold flex items-center gap-2.5 transition-all hover:translate-y-[-1px] hover:shadow-lg hover:shadow-blue-200 active:scale-95"
+              >
                 <ExternalLink size={16} className="transition-transform group-hover:translate-x-1" />
                 View My Work
-              </button>
-              
-              <button className="group relative bg-transparent border border-foreground/20 text-foreground dark:text-white px-7 py-3 rounded-full text-sm font-bold flex items-center gap-2.5 transition-all hover:bg-foreground/5 dark:hover:bg-white/10 active:scale-95">
+              </a>
+
+              <a
+                href={`${import.meta.env.BASE_URL}resume.png`}
+                download="Harishwaran-N-Resume.png"
+                className="group relative bg-transparent border border-foreground/20 text-foreground dark:text-white px-7 py-3 rounded-full text-sm font-bold flex items-center gap-2.5 transition-all hover:bg-foreground/5 dark:hover:bg-white/10 active:scale-95"
+              >
                 <Download size={16} className="transition-transform group-hover:translate-y-0.5" />
                 Download CV
-              </button>
+              </a>
             </div>
 
-            <div className="mt-8 flex justify-center lg:justify-start">
-               <button className="flex items-center gap-2.5 px-5 py-2 rounded-full bg-foreground/5 dark:bg-white/5 border border-foreground/10 dark:border-white/10 text-[11px] font-bold text-foreground dark:text-white hover:border-primary/30 transition-all hover:scale-105 shadow-sm">
-                 <Share2 size={14} className="text-primary" />
-                 Connect
-                 <ChevronDown size={12} className="ml-0.5 opacity-50" />
-               </button>
+            <div className="mt-8 flex flex-wrap justify-center lg:justify-start gap-3">
+              <a
+                href="tel:9655657161"
+                className="flex items-center gap-2 px-4 py-2 rounded-full bg-foreground/5 dark:bg-white/5 border border-foreground/10 dark:border-white/10 text-[11px] font-bold text-foreground dark:text-white hover:border-primary/30 transition-all"
+              >
+                <Phone size={14} className="text-primary" />
+                9655657161
+              </a>
+              <a
+                href="mailto:nagachellam862@gmail.com"
+                className="flex items-center gap-2 px-4 py-2 rounded-full bg-foreground/5 dark:bg-white/5 border border-foreground/10 dark:border-white/10 text-[11px] font-bold text-foreground dark:text-white hover:border-primary/30 transition-all"
+              >
+                <Mail size={14} className="text-primary" />
+                Email
+              </a>
+              <a
+                href="https://www.linkedin.com/in/n-harishwaran-9ab6782a8"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="flex items-center gap-2 px-4 py-2 rounded-full bg-foreground/5 dark:bg-white/5 border border-foreground/10 dark:border-white/10 text-[11px] font-bold text-foreground dark:text-white hover:border-primary/30 transition-all"
+              >
+                <Linkedin size={14} className="text-primary" />
+                LinkedIn
+              </a>
             </div>
           </motion.div>
         </div>

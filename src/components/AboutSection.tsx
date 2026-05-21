@@ -1,13 +1,13 @@
 import { motion } from "framer-motion";
 import SectionWrapper from "./SectionWrapper";
-import { Star, User, Sparkles, Code, Brain, Lightbulb } from "lucide-react";
+import { Sparkles, Code, Brain, Lightbulb } from "lucide-react";
 
 // OLD CONTENT RESTORED
 const infoCards = [
-  { icon: Code, label: "Development", desc: "Web & Mobile" },
-  { icon: Brain, label: "AI & Data", desc: "ML & Analytics" },
-  { icon: Lightbulb, label: "Innovation", desc: "Problem Solving" },
-  { icon: Sparkles, label: "Focus", desc: "100% Dedicated" },
+  { icon: Code, label: "Python", desc: "Core Language" },
+  { icon: Brain, label: "AI Tools", desc: "Generative AI" },
+  { icon: Lightbulb, label: "Problem Solving", desc: "Design Thinking" },
+  { icon: Sparkles, label: "Self Learner", desc: "Growth Mindset" },
 ];
 
 const AboutSection = () => (
@@ -30,18 +30,27 @@ const AboutSection = () => (
         >
           <div className="glow-card p-8">
             <p className="text-muted-foreground leading-relaxed">
-              I'm a Computer Science Engineering student from <span className="text-[#3B82F6] font-bold">SNS College of Engineering</span>, with a specialized focus on <span className="text-[#3B82F6] font-bold">Data Analysis</span> and <span className="text-[#3B82F6] font-bold">Artificial Intelligence</span>. I am committed to continuous learning in predictive modeling and intelligent data systems to drive real-world digital solutions.
+              I am pursuing a Bachelor of Engineering degree specialising in{" "}
+              <span className="text-[#3B82F6] font-bold">Computer Science and Technology</span> at{" "}
+              <span className="text-[#3B82F6] font-bold">SNS College of Engineering</span>. I'm a
+              passionate <span className="text-[#3B82F6] font-bold">Python developer</span> with a strong
+              interest in leveraging AI tools. As a self-learner, I'm committed to personal growth and eager
+              to contribute to innovative projects in the tech space.
             </p>
-            <div className="pt-6 flex gap-3">
-               <div className="flex flex-col">
-                  <span className="text-xl font-bold text-foreground">8.8</span>
-                  <span className="text-[9px] uppercase tracking-widest text-muted-foreground font-bold">CGPA</span>
-               </div>
-               <div className="w-[1px] h-8 bg-border mx-2" />
-               <div className="flex flex-col">
-                  <span className="text-xl font-bold text-foreground">4th</span>
-                  <span className="text-[9px] uppercase tracking-widest text-muted-foreground font-bold">Year Student</span>
-               </div>
+            <div className="pt-6 flex flex-wrap gap-6">
+              <div className="flex flex-col">
+                <span className="text-xl font-bold text-foreground">2023–27</span>
+                <span className="text-[9px] uppercase tracking-widest text-muted-foreground font-bold">
+                  B.E. Program
+                </span>
+              </div>
+              <div className="w-[1px] h-8 bg-border" />
+              <div className="flex flex-col">
+                <span className="text-xl font-bold text-foreground">5+</span>
+                <span className="text-[9px] uppercase tracking-widest text-muted-foreground font-bold">
+                  Internships
+                </span>
+              </div>
             </div>
           </div>
         </motion.div>

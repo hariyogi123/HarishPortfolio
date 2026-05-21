@@ -11,23 +11,23 @@ import project3 from "@/assets/project3.png";
 
 const projects = [
   {
-    title: "Smart Blind Stick",
-    desc: "IoT Powered Smart Blind Stick for enhanced navigation assistance using ultrasonic sensors and GPS.",
+    title: "IoT Powered Smart Blind Stick",
+    desc: "Arduino-based IoT powered smart blind stick for enhanced navigation using sensors and connected hardware.",
     tags: ["Arduino", "IoT"],
     image: project1,
     category: "Hardware / IoT"
   },
   {
-    title: "Anti-Doping Gamification",
-    desc: "Problem ID: 1722 — Gamification of Anti-Doping Information to educate athletes through interactive gameplay. Smart India Hackathon project.",
+    title: "Smart India Hackathon",
+    desc: "Problem Statement ID: 1722 — Gamification of Anti-Doping Information to educate athletes through interactive gameplay.",
     tags: ["Hackathon", "Game Dev"],
     image: project2,
     category: "Smart India Hackathon"
   },
   {
-    title: "Buy & Sell Land Portal",
-    desc: "A full-stack web portal enabling users to buy and sell land with secure listing and search features.",
-    tags: ["MERN", "Full Stack"],
+    title: "Buy and Sell Land Portal",
+    desc: "Mini project — a web portal enabling users to buy and sell land with listing and search features.",
+    tags: ["Web", "Mini Project"],
     image: project3,
     category: "Mini Project"
   }

@@ -7,7 +7,7 @@ const education = [
     type: "2023 – 2027",
     school: "SNS College of Engineering",
     degree: "Bachelor of Engineering",
-    desc: "Computer Science & Engineering",
+    desc: "Computer Science and Technology",
     icon: GraduationCap
   },
   {
@@ -74,11 +74,11 @@ const EducationSection = () => (
                   <h3 className="text-sm font-bold text-foreground font-heading uppercase tracking-tight">Academic Pursuit</h3>
                </div>
                <p className="text-muted-foreground text-[11px] leading-relaxed mb-4">
-                 Maintaining a strong <span className="text-foreground font-bold">8.8 CGPA</span> at SNS College, with a focus on mastering <span className="text-primary font-bold">Data Analysis</span> and building <span className="text-primary font-bold">AI solutions</span>.
+                 Currently pursuing my degree at <span className="text-foreground font-bold">SNS College of Engineering</span>, building foundations in <span className="text-primary font-bold">Python</span>, <span className="text-primary font-bold">data analysis</span>, and <span className="text-primary font-bold">AI tools</span>.
                </p>
                <div className="flex items-center gap-2 px-3 py-1.5 rounded-xl bg-primary/5 text-primary text-[8px] uppercase font-bold tracking-widest w-fit">
                   <Award size={12} />
-                  Data Science Excellence
+                  Computer Science & Technology
                </div>
             </div>
             <div className="absolute top-0 right-0 p-2 opacity-5 group-hover:opacity-10 transition-opacity">
@@ -97,7 +97,7 @@ const EducationSection = () => (
                <h3 className="text-sm font-bold text-foreground font-heading">My Mission</h3>
             </div>
             <p className="text-[11px] text-muted-foreground italic leading-relaxed">
-              "Driven to transform raw data into intelligent insights. My goal is to build AI systems that drive meaningful digital impact and simplify complexity."
+              "Eager to contribute to innovative projects in the tech space — combining data analysis, Python development, and AI to solve real-world problems."
             </p>
           </motion.div>
         </div>
